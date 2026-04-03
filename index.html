@@ -72,11 +72,11 @@
   <label for="starterRatio">Starter Ratio:</label>
   <input type="number" id="starterRatio" value="1" step="any" />
 
+  <label for="waterRatio">Agua Ratio:</label>
+  <input type="number" id="waterRatio" value="2" step="any" />
+
   <label for="flourRatio">Harina Ratio:</label>
   <input type="number" id="flourRatio" value="3" step="any" />
-
-  <label for="waterRatio">Agua Ratio:</label>
-  <input type="number" id="waterRatio" value="2.5" step="any" />
 
   <button onclick="calcular()">Calcular</button>
 
@@ -106,10 +106,10 @@
       const flour = Math.round(base * f);
       const water = Math.round(base * w);
 
-      resultado.innerHTML = 
+      resultado.innerHTML =
         "Starter: " + starter + " g<br>" +
-        "Harina: " + flour + " g<br>" +
-        "Agua: " + water + " g";
+        "Agua: " + water + " g<br>" +
+        "Harina: " + flour + " g";
     }
   </script>
 </body>
